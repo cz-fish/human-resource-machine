@@ -1,0 +1,94 @@
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+a:
+    COPYFROM 24
+    COPYTO   23
+    COPYTO   22
+b:
+    COMMENT  0
+    INBOX   
+    COPYTO   [22]
+    JUMPZ    c
+    BUMPUP   22
+    JUMP     b
+c:
+    COMMENT  1
+d:
+e:
+    COPYFROM [23]
+    JUMPZ    f
+    JUMP     g
+f:
+    BUMPUP   23
+    SUB      22
+    JUMPZ    a
+    JUMP     e
+g:
+    COPYTO   19
+    COPYFROM 23
+    COPYTO   18
+    COMMENT  2
+h:
+i:
+j:
+    BUMPUP   23
+    SUB      22
+    JUMPZ    l
+    COPYFROM [23]
+    JUMPZ    j
+    SUB      19
+    JUMPN    k
+    JUMP     i
+k:
+    COPYFROM [23]
+    COPYTO   19
+    COPYFROM 23
+    COPYTO   18
+    JUMP     h
+l:
+    COPYFROM 19
+    OUTBOX  
+    COPYFROM 24
+    COPYTO   [18]
+    COPYTO   23
+    JUMP     d
+
+
+DEFINE COMMENT 0
+eJxzZWBgKNSZH8ajx5DHo8fRfUmbd4+fbsDybL265qUG7sWKRksKmm2b8oHKGIL8p099HWg2dU54f79+
+jHP7yrhrte7xmSUv4mZnnYsRTJ4Z8TpuScia+P4A0TQJ36OF9V6zGxm9NkyI9dZb9tlvydb2YMH9v8O3
+HOyLMTrQFu++A2RmRtPkFOO6kFSZ6rqc1vINlXolzztNivbO3FS0YXl36ez1KhV1G62rrddvqju3dFXj
+7BmMrUsKotp3TvvW8XpxUNfnlQHdpavP9PQvA5m1Y7V32YzVLIWOKy4lf1iUm3B3rmTmslnnyrlndvV4
+zUydzzRn7wbxBYL7Py0UPXR6SdmhxhUb9oH0PVixV+3vyucu9iv7++et9NnNMApGwQgCAN+offo;
+
+DEFINE COMMENT 1
+eJwLY2BgeKUnuH+Fvtp2doOTi3z07HO79dSiDxme9bxqxuCw1EbSOsBF0lrPdbYNUClDoY5z+3y7e80g
+dpabYNUZ1x9rVrnl7oHwveNBtFNoV+mREPcdVhH2LdMiN1R+jtIqfRvTVqSa0FYklZJbPjG9rjknc8ME
+razHcz2zlmwF6fFuLK0NrjOrW1CZ2Z1RJjldp5Rl/puS/mXHy/6sl6tq276+/vWuU40cO583HdwMUu/c
+Umha2+Y8b3oHyzYQ//06LXeujT+mum3auRbEP3+sqqHi8K0GxQP3mp33K7Yl71/RVXvQu9fjZH9/6qnP
+k46ffDx3zfE1S0KPhKzac/Da6of7t6wC6Vt5RdTi3KWE1nOX7Gf3XL604uSVvRtcryltUbjRtOXGrXsb
+je5OX+N/L2A5SO2185OrQ+48LwKxY1bxeNqsqgpSWrEzg31ZZgnDKBgFQwQAAE3+l5w;
+
+DEFINE COMMENT 2
+eJzLYmBgcDPgSSjU8Y7PVL6W9kP2damU7I+6nbIMrRsVTnYXa/+YKqQzf3axtveSA2os2z7Lhxx8JhFz
+/Jzo3uNArQybzDm6xc3ubTQxT+0QtBCsemPZlO9pvTf7qM2frPt2TfnfHAWrDFxOdm9yVpr702HvhgjH
+a6tzXadPTfK81yzhK1gl7H+u/FyAYJVXUEJre3DVdLaQSyvagzN3gswuTP9cHZJmVP036V6zenzhRN5Y
+7yWrYyXXqcfLbnycsHeDeKrRSv2Mprlt2bMb4/Ii1oL0/Kmy14ioYXCoqLEP21sVsBwkFtopaDqlM8C7
+qt1oJYhfPmX2jNMzJk9aOTO378XM5526MyQb5kzqKnWacLJkZW9XqUF3RH1RV2b3xa69M1/3CK543K+0
+xWry610Xp/XvlZ0XsA9kRuXqz9Uyq7bUxK2MqP+/4l5z3Eq1zhur+/vttv6YariLYc6Z3c8X9O4OWD51
+x8HNyZsF919aW3X07sqY40wrbh1VWV52CGTGz0N/bP4cvFQlefhcn+Cx5wuenZy9vuas+w7TC8+3C19k
+2QZSw3hgcnXjdftchlEwCmgEAGNowr4;
+
+DEFINE LABEL 18
+eJxjZ2BguF7Tnzip7lZmbsOWmlONs9cDhRgYKxMcGEbBKBgFwx4AAEwMCmo;
+
+DEFINE LABEL 19
+eJzjYGBgWJF1aeKmug37jvWV3QRyGS4VLXgwv3XJPL6ehFaGUTAKRsGwBgDtCg5o;
+
+DEFINE LABEL 22
+eJxzYmBgOKBWl/NCuSrzg4JkZrjcrUwp2Xs5t2VSC0vkJ1crqb3u+a92aeICtZ3T2lSU5q5TTJ2/Tzp1
+PlAbQ4NRk+MCo3uhNibzW8rMjFaCxDL1X5cm2NnngthiTn+yClxWLDzv0tb5xvVaLZtHV6mt99HCIn+W
+Qo/g50UgNZ1xbS4tCUcLlRJf9zAlRqwFiS3InT2juEh0yvliwYlrSx635ZVUNXwqKqzalc9Tzpqzpuxt
+RkDl5bTpdV9Tl7RfTd0wgTfz+QL27DVLFHNzl9rk8y6dWsixCGSOd6Na0apGlo7ehskr1ZoTWhlb+yt+
+tzkXiHUm5AV0P8pX7Q+odJpwq8F2EgvYP6NgFIxEAAAYYWws;
+
